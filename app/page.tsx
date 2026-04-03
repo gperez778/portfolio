@@ -64,16 +64,6 @@ export default function HomePage() {
 
       {/* ── Projects Grid ── */}
       <section className="px-6 md:px-10 py-16 md:py-24 max-w-site mx-auto">
-        <motion.h2
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-60px" }}
-          transition={{ duration: 0.6 }}
-          className="text-label font-medium uppercase tracking-widest text-muted mb-10"
-        >
-          Selected Work
-        </motion.h2>
-
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project, i) => (
             <motion.div

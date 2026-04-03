@@ -1,92 +1,62 @@
 export interface Project {
   slug: string;
   title: string;
-  subtitle: string;
   tags: string[];
   description: string;
   href: string;
   coverImage: string;
-  year: string;
   role: string;
 }
 
 export const projects: Project[] = [
   {
     slug: "imvu-hashtags",
-    title: "IMVU: Hashtags Discover",
-    subtitle: "Building the foundation for interest-based connections",
-    tags: ["0-1 Product", "Design System"],
+    title: "IMVU : Hashtags",
+    tags: ["Discover", "Engagement"],
     description:
-      "Managed creation of a new foundation for connection, helping users engage through shared interests.",
+      "Managed creation of a new foundation for connection, helping users engage through shared interests, locations, and products, while surfacing curated content and people to explore.",
     href: "/imvu-hashtags",
-    coverImage:
-      "/assets/LgR4kW4lqcIut2mzQ6PfY2jfAck.png",
-    year: "2024",
+    coverImage: "/assets/LgR4kW4lqcIut2mzQ6PfY2jfAck.png",
     role: "Director, Product Design",
   },
   {
     slug: "ea-meta",
-    title: "EA: 1st Internal Design System",
-    subtitle: "Creating solutions for a suite of teams & products",
-    tags: ["Design System", "Enterprise"],
+    title: "EA : 1st Internal Design System",
+    tags: ["Design System", "Brand", "0-1 team"],
     description:
-      "Led the creation of EA's first internal design system, unifying design language across 5 core products.",
+      "Led and created a design system to bring consistency to a growing product suite, where fragmented design was creating inconsistent experiences across products and teams.",
     href: "/ea-meta",
-    coverImage:
-      "/assets/LgR4kW4lqcIut2mzQ6PfY2jfAck.png",
-    year: "2023",
-    role: "Manager & Designer",
+    coverImage: "/assets/LgR4kW4lqcIut2mzQ6PfY2jfAck.png",
+    role: "Sr Manager / Lead UX Design",
   },
   {
-    slug: "imvu-redesign",
-    title: "IMVU: Redesign & Design System",
-    subtitle: "Rebuilding the experience from the ground up",
-    tags: ["Redesign", "Design System", "Brand"],
+    slug: "imvu-system-redesign",
+    title: "IMVU : Redesign & Design System",
+    tags: ["Design System", "Redesign", "Brand"],
     description:
-      "A comprehensive platform redesign alongside a scalable component system.",
-    href: "/imvu-hashtags",
-    coverImage:
-      "/assets/M5BYpFV5ukCc6wJlq4Wqvkzw_scale-d.png",
-    year: "2022",
+      "Led a team through a redesign of IMVU in phases while introducing a cross-platform design system for iOS, Android, and Web, creating consistent experience to attract and retain users while creating team efficiency.",
+    href: "/imvu-system-redesign",
+    coverImage: "/assets/LgR4kW4lqcIut2mzQ6PfY2jfAck.png",
     role: "Director, Product Design",
   },
   {
     slug: "ea-help-center",
-    title: "EA: Help Center",
-    subtitle: "Providing a new means of support for all teams",
-    tags: ["Enterprise", "0-1 Product"],
+    title: "EA : Help Center",
+    tags: ["0-1 Product", "Enterprise"],
     description:
-      "Overhauled EA's employee support system from email-only to a unified portal, reducing SLAs by 45%.",
+      "Creating a new internal service tool that reduces SLA, increase resolutions, and unblock any employee across a large international team.",
     href: "/ea-help-center",
-    coverImage:
-      "/assets/LgR4kW4lqcIut2mzQ6PfY2jfAck.png",
-    year: "2023",
-    role: "Lead Designer",
+    coverImage: "/assets/PQqICxfobgL4joAir7TvPV8EI_scale-d.png",
+    role: "Senior Manager, Experience Design",
   },
   {
     slug: "withme-design",
-    title: "WithMe: Social & Games on Unreal",
-    subtitle: "Reimagining social connection through play",
-    tags: ["0-1 Product", "Unreal"],
+    title: "WithMe : Social & Games on Unreal",
+    tags: ["Design System", "Unreal", "Redesign"],
     description:
-      "Designed a social gaming experience built on Unreal Engine, bridging virtual worlds and real connection.",
+      "Led and designed a 0–1 social 3D interactive application in Unreal, building features and UI libraries to achieve establishing our first userbase.",
     href: "/withme-design",
-    coverImage:
-      "/assets/LgR4kW4lqcIut2mzQ6PfY2jfAck.png",
-    year: "2021",
+    coverImage: "/assets/00xi47s8h1p2WaMzYu25xE7GlcI_width=2.png",
     role: "Director, Product Design",
-  },
-  {
-    slug: "chill-cafe",
-    title: "Chill Cafe",
-    subtitle: "A calm virtual space for focus and creativity",
-    tags: ["Brand", "0-1 Product"],
-    description:
-      "Designed a lo-fi inspired virtual space combining ambient sound, study tools, and community.",
-    href: "/",
-    coverImage:
-      "/assets/yhCWqAQdofIvzfURS6dRCn4AivY.png",
-    year: "2022",
-    role: "Product Designer",
   },
 ];

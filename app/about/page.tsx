@@ -2,189 +2,74 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import ScrollReveal from "@/components/ScrollReveal";
 import Footer from "@/components/Footer";
-
-const skills = [
-  "UX / Product Design",
-  "Design Systems",
-  "Team Leadership",
-  "User Research",
-  "Prototyping",
-  "Interaction Design",
-  "Brand Design",
-  "0-1 Product Strategy",
-  "Design Ops",
-  "Accessibility (WCAG)",
-];
-
-const experience = [
-  { company: "IMVU", role: "Director of Product Design", years: "2021–2024" },
-  { company: "Electronic Arts", role: "Manager, Product Design", years: "2018–2021" },
-  { company: "Various", role: "Senior / Lead Designer", years: "2013–2018" },
-];
 
 export default function AboutPage() {
   return (
     <main className="min-h-screen pt-16">
       <div className="px-6 md:px-10 max-w-site mx-auto">
-        {/* ── Header ── */}
-        <section className="pt-24 pb-16 md:pt-32 md:pb-20 border-b border-border">
-          <motion.p
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-label font-medium uppercase tracking-widest text-muted mb-8"
-          >
-            About
-          </motion.p>
+        <section className="pt-24 pb-16 md:pt-32 md:pb-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="flex flex-col gap-10"
+            >
+              <div className="flex flex-col gap-6">
+                <h1 className="text-display-lg font-semibold text-text leading-tight">
+                  Adaptable, Collaborative, Inclusive
+                </h1>
+                <p className="text-body-lg text-muted">
+                  From strategy to pixel-perfect execution, I&apos;ve spent over a decade leading design while staying close to the craft. I&apos;ve built teams and shaped strategy while staying hands-on refining visuals, sketching flows, and collaborating with teams from idea to launch.
+                </p>
+                <p className="text-body-lg text-muted">
+                  My work blends visual craft, thoughtful reasoning, and technical fluency. I care about how products look, why they work, and how they&apos;re built.
+                </p>
+                <p className="text-body-lg text-muted">
+                  Outside of work, I&apos;m into games, music, travel, climbing, and illustration—always exploring with my family. Creativity and curiosity drive me in and out of design, and I bring that energy to every team and product I work with.
+                </p>
+              </div>
+              <a
+                href="https://docs.google.com/document/d/1ZAe_PUf9_SEKTway1T4J4T24Z4Z9aNQBAM6sBvfxEpk/edit?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-body-sm font-medium text-text border border-border rounded-full px-6 py-3 w-fit hover:border-[#3a3a3a] hover:bg-surface transition-all duration-200"
+              >
+                Resume ↗
+              </a>
+            </motion.div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
+              className="grid grid-cols-2 gap-4"
             >
-              <h1 className="text-display-lg font-semibold text-text mb-6 leading-tight">
-                Adaptable,
-                <br />
-                Collaborative,
-                <br />
-                Inclusive.
-              </h1>
-              <p className="text-body-lg text-muted mb-6">
-                From strategy to pixel-perfect execution, I&apos;ve spent over a
-                decade leading design while staying close to the craft.
-              </p>
-              <p className="text-body-md text-muted mb-8">
-                I believe great design lives at the intersection of empathy,
-                systems thinking, and relentless iteration. Whether I&apos;m
-                building a team, a design system, or a 0-1 product — I bring
-                the same curiosity and care to every pixel.
-              </p>
-              <a
-                href="https://docs.google.com/document/d/1jiSPBQCtEvoHgM8Uc_6F0x5ymguSb7Xt6Z-jFl5L1Ck/edit?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-body-sm font-medium text-text border border-border rounded-full px-6 py-3 hover:border-[#3a3a3a] hover:bg-surface transition-all duration-200"
-              >
-                View Resume ↗
-              </a>
-            </motion.div>
-
-            {/* Photo */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.97 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.7, delay: 0.3 }}
-              className="relative aspect-[4/5] rounded-2xl overflow-hidden bg-surface-2"
-            >
-              <Image
-                src="/assets/KgH49uXFWD6WHMcnQgryV60VPcw_scale-d.jpg"
-                alt="George Perez"
-                fill
-                className="object-cover"
-                unoptimized
-              />
-            </motion.div>
-          </div>
-        </section>
-
-        {/* ── Skills ── */}
-        <section className="py-16 md:py-20 border-b border-border">
-          <ScrollReveal>
-            <p className="text-label font-medium uppercase tracking-widest text-muted mb-8">
-              Skills
-            </p>
-          </ScrollReveal>
-          <div className="flex flex-wrap gap-3">
-            {skills.map((skill, i) => (
-              <ScrollReveal key={skill} delay={i * 0.04}>
-                <span className="text-body-sm font-medium text-subtle border border-border rounded-full px-4 py-2">
-                  {skill}
-                </span>
-              </ScrollReveal>
-            ))}
-          </div>
-        </section>
-
-        {/* ── Experience ── */}
-        <section className="py-16 md:py-20 border-b border-border">
-          <ScrollReveal>
-            <p className="text-label font-medium uppercase tracking-widest text-muted mb-10">
-              Experience
-            </p>
-          </ScrollReveal>
-          <div className="flex flex-col gap-6">
-            {experience.map(({ company, role, years }, i) => (
-              <ScrollReveal key={company} delay={i * 0.1}>
-                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between py-6 border-b border-border last:border-0">
-                  <div>
-                    <p className="text-xl font-semibold text-text mb-1">{company}</p>
-                    <p className="text-body-sm text-muted">{role}</p>
-                  </div>
-                  <p className="text-body-sm text-muted/60 mt-2 sm:mt-0">{years}</p>
+              <div className="flex flex-col gap-4 pt-10">
+                <div className="relative aspect-square rounded-2xl overflow-hidden bg-surface-2">
+                  <Image src="/assets/KgH49uXFWD6WHMcnQgryV60VPcw_scale-d.jpg" alt="Manini'owali Beach" fill className="object-cover" unoptimized />
+                  <span className="absolute bottom-2 left-3 text-[10px] font-bold uppercase tracking-widest text-white/70 bg-black/70 rounded-full px-2 py-0.5">Manini&apos;owali Beach</span>
                 </div>
-              </ScrollReveal>
-            ))}
-          </div>
-        </section>
-
-        {/* ── Personal ── */}
-        <section className="py-16 md:py-20">
-          <ScrollReveal>
-            <p className="text-label font-medium uppercase tracking-widest text-muted mb-8">
-              Beyond the screen
-            </p>
-          </ScrollReveal>
-          <ScrollReveal delay={0.1}>
-            <p className="text-body-lg text-muted max-w-2xl">
-              When I&apos;m not designing, you&apos;ll find me playing games,
-              making music, traveling, rock climbing, or working on
-              illustrations. I believe a rich life outside work feeds better
-              creative work inside it.
-            </p>
-          </ScrollReveal>
-
-          {/* Personal photo grid */}
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-12">
-            <ScrollReveal delay={0}>
-              <div className="aspect-square rounded-2xl overflow-hidden bg-surface-2 relative">
-                <Image
-                  src="/assets/U6yqV7raRRjbhJB69id9LyPkALA_scale-d.jpg"
-                  alt="Manini'owali Beach"
-                  fill
-                  className="object-cover"
-                  unoptimized
-                />
+                <div className="relative aspect-square rounded-2xl overflow-hidden bg-surface-2">
+                  <Image src="/assets/PF26K9tccfhoEf2yHQEWwZ7pUcw_scale-d.jpg" alt="Nested Illustration" fill className="object-cover" unoptimized />
+                  <span className="absolute bottom-2 left-3 text-[10px] font-bold uppercase tracking-widest text-white/70 bg-black/70 rounded-full px-2 py-0.5">Nested Illustration</span>
+                </div>
               </div>
-            </ScrollReveal>
-            <ScrollReveal delay={0.1}>
-              <div className="aspect-square rounded-2xl overflow-hidden bg-surface-2 relative">
-                <Image
-                  src="/assets/PF26K9tccfhoEf2yHQEWwZ7pUcw_scale-d.jpg"
-                  alt="Xena, the dog"
-                  fill
-                  className="object-cover"
-                  unoptimized
-                />
+              <div className="flex flex-col gap-4 pb-10">
+                <div className="relative aspect-square rounded-2xl overflow-hidden bg-surface-2">
+                  <Image src="/assets/sA8VHIbEYRpiTx9bwz5ldq4ng_scale-d.png" alt="Xena" fill className="object-cover" unoptimized />
+                  <span className="absolute bottom-2 left-3 text-[10px] font-bold uppercase tracking-widest text-white/70 bg-black/70 rounded-full px-2 py-0.5">Xena</span>
+                </div>
+                <div className="relative aspect-square rounded-2xl overflow-hidden bg-surface-2">
+                  <Image src="/assets/U6yqV7raRRjbhJB69id9LyPkALA_scale-d.jpg" alt="Stinson Beach" fill className="object-cover" unoptimized />
+                  <span className="absolute bottom-2 left-3 text-[10px] font-bold uppercase tracking-widest text-white/70 bg-black/70 rounded-full px-2 py-0.5">Stinson Beach</span>
+                </div>
               </div>
-            </ScrollReveal>
-            <ScrollReveal delay={0.2}>
-              <div className="aspect-square rounded-2xl overflow-hidden bg-surface-2 relative">
-                <Image
-                  src="/assets/sA8VHIbEYRpiTx9bwz5ldq4ng_scale-d.png"
-                  alt="Stinson Beach"
-                  fill
-                  className="object-cover"
-                  unoptimized
-                />
-              </div>
-            </ScrollReveal>
+            </motion.div>
           </div>
         </section>
       </div>
-
       <Footer />
     </main>
   );

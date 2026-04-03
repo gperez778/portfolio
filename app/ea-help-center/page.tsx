@@ -3,67 +3,82 @@ import CaseStudyLayout from "@/components/CaseStudyLayout";
 
 export const metadata: Metadata = {
   title: "EA - Help Center — George Perez",
-  description:
-    "Providing a new means of support for all EA teams. 45% SLA reduction, 60-68% response time improvement, employee NPS of 9/10.",
+  description: "Providing a new means of support for all teams at EA.",
 };
 
 export default function EAHelpCenterPage() {
   return (
     <CaseStudyLayout
-      title="EA - Help Center"
-      subtitle="Providing a new means of support for all teams"
-      tags={["Enterprise", "0-1 Product", "ServiceNow"]}
-      role="Senior Manager, Experience Design"
+      title="Help Center"
+      subtitle='"Providing a new means of support for all teams"'
+      tags={["0-1 Product", "Enterprise"]}
+      role="Senior Manager Experience Design"
       duration="6 months"
       team="1 Designer, Engineering, Product"
-      platforms="Case Management, ServiceNow"
-      heroImage="/assets/LgR4kW4lqcIut2mzQ6PfY2jfAck.png"
+      platforms="CTO · Design System · Case Management · Service Now"
+      heroImage="/assets/l1T2CxLT28HilpKsSgBthn6XEg_scale-d.png"
       stats={[
-        { value: "45%", label: "SLA reduction" },
-        { value: "60–68%", label: "Response time improvement (employees & support agents)" },
-        { value: "9/10", label: "Employee NPS (5,000 participants)" },
-        { value: "19%", label: "Ticket volume decrease year-over-year" },
+        { value: "45%", label: "Reduced average SLAs" },
+        { value: "60–68%", label: "Decreased Employee & Support response times" },
+        { value: "9/10", label: "Employee (5000) NPS pulse" },
+        { value: "19%", label: "Reduced average tickets vs. previous year" },
       ]}
       sections={[
         {
-          heading: "Problem & Opportunity",
+          heading: "What & Why",
+          body: "Electronic Arts managed all employee support across the company globally with just email. Global employee feedback across all teams stated that support was one of the top 3 issues with workplace communications and productivity. Our goal: Create a streamlined portal and version of support for employees to reach out to customer support teams for any department with little issue and clear visibility to decrease SLAs and increase employee productivity.",
+          image: "/assets/l1T2CxLT28HilpKsSgBthn6XEg_scale-d.png",
+        },
+        {
+          heading: "Process at a glance",
+          body: "Early stage process involved research from employees across the company that covered each respective support area, diving into product analysis of ticketing systems, and identifying solutions that would create impact for problem spaces. Process: Discover → Experiment → Design → Iterate → Support",
+        },
+        {
+          heading: "Establishing a foundation",
+          body: "Identified scope risks with building something from the ground up, and through research I identified ServiceNow as a platform we use and could incorporate. This helped support connect the services for baseline technology at little to no cost.",
+          image: "/assets/QDJfVu4GwHctNEiaPwXonHMfS4_scale-d.png",
+        },
+        {
+          heading: "Understanding our users",
+          body: "Interviewed over 40 employees from different personas identified based on the business of the product and operations. This helped focus on solutions that solved for the needs of everyone, not just the immediate problem.",
+        },
+        {
+          heading: "Rapid prototyping during wireframes",
+          body: "During the wireframe stage I was leading the project as a lead IC. I proposed rapid prototyping to cover edge cases quicker with less meetings, and also to reduce the amount of time prototyping during the high fidelity stage.",
+          image: "/assets/Je1ohRPq8GEqXeog2oNG74ZQU_width=1.png",
+        },
+        {
+          heading: "Adapting to team changes",
+          body: "During this phase I also transitioned into a management role and had 2 employees reporting to me that I mentored and worked hands on with to deliver.",
+        },
+        {
+          heading: "Utilizing a recent brand change",
+          body: "EA updated their brand globally prior to this project kicking off. It was an opportunity to get away from the old brand and introduce the new company wide.",
+          image: "/assets/xaaCPsPCwSREPfZCeZTxhjePl8_width=6.png",
+        },
+        {
+          heading: "Introducing early stages of AI",
+          body: "Provided insight on ServiceNow capability to take advantage of AI Agents to handle automated and simple tasks and decrease tickets created.",
+        },
+        {
+          heading: "Utilize META design system",
+          body: "Design system components made it extremely easy to implement and move forward without creating new building blocks for a new product set.",
+        },
+        {
+          heading: "Results",
           body: [
-            "Electronic Arts relied solely on email for global employee support, ranking among the top 3 workplace communication issues. Teams had no unified way to submit requests across departments.",
-            "Objective: construct an accessible portal enabling employees to submit requests across departments while reducing response times and enhancing productivity.",
+            "Reduced average SLAs by 45%",
+            "Decreased both Employee and Support response times by 60–68%",
+            "Employee (5000) pulse was 9 out of 10 for NPS",
+            "Reduced average tickets in relation to previous year by 19%",
+            "First large project to incorporate META design system and prove impact",
           ],
-          image: "/assets/iZrJ4hRtw3m8hTFXzAMf24aITIk_scale-d.png",
         },
         {
-          heading: "Research — Understanding Users",
-          body: "Conducted 40+ employee interviews across three personas: 24 employees, 16 support agents, and 6 administrators. This cross-sectional approach ensured the portal addressed needs from every angle of the support workflow.",
-          image: "/assets/s2bSuSYdOzHIBTqg5YPSr2hx9Tw_scale-d.png",
-        },
-        {
-          heading: "Strategic Foundation",
+          heading: "Learnings & Reflection",
           body: [
-            "Key strategic decision: leveraged the existing ServiceNow platform rather than building a custom solution, minimizing costs while maintaining full functionality.",
-            "Process framework: Discover → Experiment → Design → Iterate → Support.",
-          ],
-          image: "/assets/nEV6kUb7XhHa92riHTNaeAK750_scale-d.png",
-        },
-        {
-          heading: "Design Execution",
-          body: [
-            "Three critical initiatives: (1) Rapid prototyping strategy — accelerated wireframe testing to address edge cases and reduce high-fidelity iteration time. (2) Organizational transition — promoted to management mid-project, mentoring 2 direct reports while maintaining hands-on involvement. (3) Brand & technology integration — incorporated EA brand refresh and introduced AI assistant 'Aria' leveraging ServiceNow ML for automating routine requests.",
-            "Aria handled: password resets, software requests, building access queries, and folder provisioning based on role — reducing manual request volume significantly.",
-          ],
-          image: "/assets/09FJaDbxIbMmKElO6Kuye8S8Ibw_scale-d.png",
-        },
-        {
-          heading: "Design System Integration",
-          body: "Leveraged META design system components throughout, eliminating custom component creation. This was the first major project demonstrating the META system's real-world impact at scale.",
-          image: "/assets/54ZuATZ3QVeooyP0Dh3eouA8Zqg_scale-d.png",
-        },
-        {
-          heading: "Results & Learnings",
-          body: [
-            "45% SLA reduction. 60–68% response time improvement for both employees and support agents. Employee NPS of 9/10 from 5,000 participants. 19% year-over-year ticket volume decrease.",
-            "Learnings: (1) Prioritized existing company tools over reinvention — ServiceNow avoided months of custom build time. (2) Navigating IC-to-manager transition mid-project modeled adaptability for the team and built trust quickly.",
+            "Did not need to reinvent the wheel — discovered services the company was already using to bring solutions to the business and users.",
+            "Learned the difficulties of switching from lead IC to a manager midway through, but adapting was something I really wanted to showcase to my employees.",
           ],
         },
       ]}

@@ -56,7 +56,7 @@ export default function ProjectCard({ project }: { project: Project }) {
 
           <div className="flex items-center justify-between">
             <span className="text-label text-muted/60 uppercase tracking-widest">
-              {project.role} · {project.year}
+              {project.role}
             </span>
             <motion.span
               className="text-body-sm text-subtle"

@@ -3,78 +3,86 @@ import CaseStudyLayout from "@/components/CaseStudyLayout";
 
 export const metadata: Metadata = {
   title: "WithMe Design — George Perez",
-  description:
-    "Social metaverse built on Unreal Engine. 10,000 users onboarded in first month, 42% D1 retention rate.",
+  description: "Social metaverse built on Unreal Engine.",
 };
 
 export default function WithMeDesignPage() {
   return (
     <CaseStudyLayout
       title="WithMe Design"
-      subtitle="Social metaverse built on Unreal Engine"
-      tags={["0-1 Product", "Unreal Engine", "3D UI"]}
+      subtitle='"Social metaverse built on Unreal Engine"'
+      tags={["Design System", "Unreal", "Redesign"]}
       role="Director, Product Design"
       duration="1 year"
       team="4 Designers, Engineering, Product, Marketing"
-      platforms="iOS, Android — Full App Experience"
-      heroImage="/assets/LgR4kW4lqcIut2mzQ6PfY2jfAck.png"
+      platforms="iOS/Android App · Full App Experience"
+      heroImage="/assets/00xi47s8h1p2WaMzYu25xE7GlcI_width=2.png"
       stats={[
-        { value: "10K", label: "Users onboarded in the first month" },
-        { value: "42%", label: "D1 retention rate" },
+        { value: "10K", label: "Users onboarded during the first month" },
+        { value: "42%", label: "D1 retention driving excitement for monetization" },
         { value: "0-1", label: "Complete Unreal UI system built from scratch" },
-        { value: "1st", label: "Design team to build and ship a full UMG UI library" },
+        { value: "1st", label: "Product designers to deliver to games in 3D" },
       ]}
       sections={[
         {
-          heading: "What & Why",
+          heading: "What and Why",
+          body: "We set out to build WithMe—a social 3D experience that felt more like real life, blending games, hangouts, and self-expression. But after switching from Godot to Unreal to scale the platform, we ran into a big challenge: no UI developers and very limited budget/time. To keep things moving, I dove into learning UMG myself and started building the UI from the ground up. I also led our design team through a full 0–1 rebuild of the app, creating new systems and workflows that worked within our constraints—so we could deliver on the vision without waiting for perfect resources.",
+        },
+        {
+          heading: "Goals",
           body: [
-            "The team aimed to create a social 3D experience blending games, hangouts, and self-expression targeting Gen Z. The challenge: after switching from Godot to Unreal Engine, there were no UI developers and severe budget/time constraints.",
-            "I personally learned UMG (Unreal's UI framework) and led a complete 0-1 redesign, establishing new systems and workflows compatible with resource limitations.",
+            "Create a UI system and library in Unreal",
+            "Utilize Figma to communicate dev needs from design",
+            "Create a new review process for designers to QA local/staged builds through P4F",
+            "Upgrade the design language to a newer direction",
           ],
-          image: "/assets/M5BYpFV5ukCc6wJlq4Wqvkzw_scale-d.png",
         },
         {
-          heading: "Approach — Learn & Build",
+          heading: "Approach",
+          body: "Learn Unreal & build Figma design structure for a library and leveling up existing foundations of color, typography, layout, and considering new things outside the scope of 2D design such as depth, spaces, and UI in relation to smart objects while managing 3 designers. Process improvements were made to also keep game designers, producers, PMs, engineers, design, and marketing involved 0-1 and relationship manage to reduce iteration scope.",
+        },
+        {
+          heading: "Systems thinking for a 3D space",
           body: [
-            "Goals: create a UI system and library in Unreal, use Figma to communicate development needs, establish a QA review process for designers using P4F, and upgrade the design language direction.",
-            "Core strategy: learn Unreal, build Figma library structures, and level up foundational elements — color, typography, layout — while considering 3D-specific factors: depth, space, and smart object relationships.",
+            "3D Environment vs 2D UI: Made sure to create a hypothesis that focused on user intention, goals, and context to improve how we approach interactions in an application that had a very heavy 3D game like experience around it. This involved rules around camera, depth, occlusion, and perspective.",
+            "Layering property hierarchy: Defined guides for layer tier treatment we utilize in order to determine application based on prioritization from style choices, layering affects, and context/importance.",
+            "User priority principle: A common issue team members surfaced was trying greatly to never lose sight of the 3D world with UI. I did agree with this concept to a degree, and discovered it constrained our ability to deliver intuitive experiences. The purpose was to identify the type of user and goal in any given interaction. This allowed for proper prioritization of creating components but also when to apply them to allow for more contextual application.",
           ],
-          image: "/assets/Q7JDruPAHzqfSgCxd4mMgqwZrao_scale-d.png",
         },
         {
-          heading: "Systems Thinking — 3D vs 2D",
+          heading: "Learn, execute, and coach (Unreal)",
+          body: "Challenge: I myself and my immediate design team had zero experience with Unreal. There was no resourcing for Game UI Designers with Unreal experience during that time. Additionally Figma didn't provide clear definitions for form and function when translated into the 3D world. Solution: Aligned with executives and peers to have designers learn scripting and build the UI library in Unreal in order for them to have what was needed to build. I spearheaded this personally to lead my team by example, and move development forward by building out UI and testing in Unreal to existing script.",
+        },
+        {
+          heading: "Design System for Unreal",
           body: [
-            "Defined a tier-based layering property hierarchy with treatment guides for style choices, layering effects, and contextual importance.",
-            "User priority principle: the team initially prioritized never losing 3D world visibility, which constrained intuitive experiences. Solution: identify user types and interaction goals, enabling contextual component application.",
+            "Build a library around it: Challenge: All feature and design work was done case by case, creating inconsistency, issues with development, and less cohesive experiences. Solution: Built out dev documentation and Figma library that supported developer needs and maintained consistency, while increasing velocity. Additionally managed designers to explore more ways to create seamless override capability for nested components.",
+            "3D Interaction UI: UI such as interaction with players or smart objects required rules. An example that was our player to player interaction menus while allowing navigation and targeting. We originally had an overlay that locked the screen. In order to utilize UI and 3D functionality better we required rules to help users navigate, interact, and not be encumbered in UI edgecases.",
           ],
-          image: "/assets/Qvvn2QKxy9kDZKrDQwDSVJspzTQ.png",
         },
         {
-          heading: "Unreal Learning & Execution",
+          heading: "UI around 3D games",
+          body: "Challenge: Working in 3D spaces to provide a variety of solutions to support game design, but overall UX within the environments. Solution: Provided both 2D and 3D UI solutions and 2D \"experiences\" to still keep gameplay immersive to reduce the scope of game development work.",
+        },
+        {
+          heading: "Build the application side",
+          body: "Challenge: Extremely time consuming task requiring going back into files and assets that were already designed for, and sifting through legacy work from previous designers. Solution: Worked with the existing designers to divide out and apply the new library structure and components based on strengths and previous feature ownership. This involved updating Unreal components and UI, while testing out previous experiences to ensure there was no regression.",
+        },
+        {
+          heading: "Outcome",
           body: [
-            "Zero Unreal experience across the design team. No available Game UI designers with Unreal expertise. Figma lacked clear 3D translation definitions.",
-            "Resolution: self-taught UMG scripting and led designers through hands-on learning, building the UI library while testing against existing code. Built the tileDestination component — entry points to destinations with description and tags, supporting static (scale: 1) and press (scale: 1.1) interaction states.",
+            "Onboarded a total of 10k users during the first month",
+            "Hit a high D1 retention of 42% driving excitement for our monetization phase",
+            "Generated great EA community feedback on the evolution of design",
+            "Bridged Figma to Unreal allowing product designers to deliver to games in 3D",
           ],
-          image: "/assets/gkdOBP4jkHBXC89DnYhhUWt4Mk.png",
         },
         {
-          heading: "3D Interaction Guidelines",
+          heading: "Learnings & Reflection",
           body: [
-            "Defined camera and interaction rules: camera positioning as primary focus when activated, HUD billboard with fixed UI scale and perspective, dismiss via target retap or auto-dismiss beyond 60 units, occlusion preventing interaction behind menus.",
-            "Offered both 2D and 3D UI options plus 2D 'experiences' reducing game development scope — providing diverse UX solutions within immersive 3D environments.",
-          ],
-          image: "/assets/I7R0TdUxtPrrbZYHhpuqHjdr1y0_scale-d.png",
-        },
-        {
-          heading: "Application & Team",
-          body: "Divided application update work among designers based on strengths and feature ownership, ensuring no regression during testing. Extremely time-intensive legacy file updates and component migration were managed through clear ownership.",
-          image: "/assets/AXtgzPcABlUQTxjlcFK8WFa88xw.png",
-        },
-        {
-          heading: "Results & Learnings",
-          body: [
-            "10K users onboarded in the first month. 42% D1 retention driving excitement for monetization phase. Positive early access community feedback on design evolution. Successfully bridged Figma-to-Unreal workflow for product designers.",
-            "Learnings: (1) Absence of traditional game UI designers became an opportunity — enabled fresh 3D UI system thinking. (2) Delayed monetization strategy articulation prevented parallel revenue planning. (3) Passion proved more powerful than perceived capability gaps — the team built things they'd never built before.",
+            "Our biggest blockers are ourselves — There was hesitation around not having a traditional game UI designer and using Unreal, but I saw it as an opportunity—not a limitation. We built a design process from scratch for 3D UI, which is still largely unsolved. It pushed us to think differently and adapt our approach to design systems.",
+            "Speaking up on business ideas — Being deep in execution and filling gaps with teams, I didn't voice up my thoughts on a monetization plan early enough to support goals sooner to monetize in parallel with retention goals.",
+            "Motivation is key — Motivation proved to drive passion and excitement over tough obstacles that team members deemed \"out of scope or capability\". Moving forward helped prove that we were able to dive into new tech and work on game engines regardless of prior skill sets.",
           ],
         },
       ]}
