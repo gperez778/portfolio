@@ -80,7 +80,7 @@ export default function AboutPage() {
               className="relative aspect-[4/5] rounded-2xl overflow-hidden bg-surface-2"
             >
               <Image
-                src="/assets/LgR4kW4lqcIut2mzQ6PfY2jfAck.png"
+                src="/assets/KgH49uXFWD6WHMcnQgryV60VPcw_scale-d.jpg"
                 alt="George Perez"
                 fill
                 className="object-cover"
@@ -148,21 +148,39 @@ export default function AboutPage() {
 
           {/* Personal photo grid */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-12">
-            {[
-              { alt: "Manini'owali Beach", label: "Manini'owali Beach" },
-              { alt: "Illustration work", label: "Nested Illustration" },
-              { alt: "Stinson Beach", label: "Stinson Beach" },
-            ].map(({ alt, label }, i) => (
-              <ScrollReveal key={label} delay={i * 0.1}>
-                <div className="aspect-square rounded-2xl overflow-hidden bg-surface-2 relative">
-                  <div className="absolute inset-0 flex items-end p-4">
-                    <span className="text-label text-muted/60 uppercase tracking-widest">
-                      {label}
-                    </span>
-                  </div>
-                </div>
-              </ScrollReveal>
-            ))}
+            <ScrollReveal delay={0}>
+              <div className="aspect-square rounded-2xl overflow-hidden bg-surface-2 relative">
+                <Image
+                  src="/assets/U6yqV7raRRjbhJB69id9LyPkALA_scale-d.jpg"
+                  alt="Manini'owali Beach"
+                  fill
+                  className="object-cover"
+                  unoptimized
+                />
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={0.1}>
+              <div className="aspect-square rounded-2xl overflow-hidden bg-surface-2 relative">
+                <Image
+                  src="/assets/PF26K9tccfhoEf2yHQEWwZ7pUcw_scale-d.jpg"
+                  alt="Xena, the dog"
+                  fill
+                  className="object-cover"
+                  unoptimized
+                />
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={0.2}>
+              <div className="aspect-square rounded-2xl overflow-hidden bg-surface-2 relative">
+                <Image
+                  src="/assets/sA8VHIbEYRpiTx9bwz5ldq4ng_scale-d.png"
+                  alt="Stinson Beach"
+                  fill
+                  className="object-cover"
+                  unoptimized
+                />
+              </div>
+            </ScrollReveal>
           </div>
         </section>
       </div>

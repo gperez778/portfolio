@@ -46,7 +46,7 @@ export const projects: Project[] = [
       "A comprehensive platform redesign alongside a scalable component system.",
     href: "/imvu-hashtags",
     coverImage:
-      "/assets/LgR4kW4lqcIut2mzQ6PfY2jfAck.png",
+      "/assets/M5BYpFV5ukCc6wJlq4Wqvkzw_scale-d.png",
     year: "2022",
     role: "Director, Product Design",
   },
@@ -85,7 +85,7 @@ export const projects: Project[] = [
       "Designed a lo-fi inspired virtual space combining ambient sound, study tools, and community.",
     href: "/",
     coverImage:
-      "/assets/LgR4kW4lqcIut2mzQ6PfY2jfAck.png",
+      "/assets/yhCWqAQdofIvzfURS6dRCn4AivY.png",
     year: "2022",
     role: "Product Designer",
   },
